@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .con{
+            border: 1px solid red;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        .con2{
+          width: 400px;
+          border: 1px solid green; 
+          text-align: center;
+          /* height: 400px;  */
+          background-color: black;
+          padding: 10px;
+        }
+    </style>
+    <title>Light On/Off</title>
+</head>
+<body>
+    <div class="con">
+        <div class="con2">
+            <h1 style="color: cornsilk;">Click Button For Turn on And off </h1>
+            <button style="background-color: darkgoldenrod;padding: 4px;" id="btn1">Turn on</button>
+            <img src="/6-2-light-bulb-free-download-png.png" width="100px" alt="" id="img1">
+            <button style="background-color: darkgoldenrod;padding: 4px; " id="btn2">Turn off</button>
+        </div>
+    </div>
+    
+    <script>
+        const btn1=document.getElementById('btn1')
+        const btn2=document.getElementById('btn2')
+        btn1.addEventListener('click',()=>{
+document.getElementById("img1").src='/light-bulb-png-file.png'
+        })
+        btn2.addEventListener('click',()=>{
+document.getElementById("img1").src='/6-2-light-bulb-free-download-png.png'
+        })
+    </script>
+</body>
+</html>
